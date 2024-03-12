@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* ----------- Responsive Styles Strats -------- */
+@media only screen and (max-width : 767px) {
+  .sidebar{
+    padding: 0;
+  } 
+  .topbar .navbar-search {
+    width: 21rem;
+  }
+
+}
+  
+@media only screen and (min-device-width : 576px) and (max-device-width : 767px) {
+.topbar .navbar-search {
+    width: 15rem;
+}
+.sidebar-toggled .topbar .navbar-search {
+  width: 18rem;
+}
+.topbar .nav-item .nav-link{
+  padding: 0;
+}
+
+}
+  
+@media only screen and (min-device-width : 768px) and (max-device-width : 991px) {
+.topbar .navbar-search {
+      width: 13rem;
+  }
+.sidebar-toggled .topbar .navbar-search {
+    width: 20rem;
+}
+  
+
+
+}
+  
+    
+  /* ----------- Responsive Styles Ends -------- */ 
+
+

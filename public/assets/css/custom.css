@@ -1,0 +1,463 @@
+/* Custom CSS only */
+
+/* Error styling [starts] */
+input.error {
+    border-color: red !important;
+}
+
+.error {
+    color: red !important;
+    font-size: 15px !important;
+    position: relative !important;
+    /* line-height: 1 !important; */
+    width: 100% !important;
+}
+
+/* For the error border including textarea input types */
+.form-control.error {
+    border: 1px solid #ff0000;
+}
+/* Error styling [ends] */
+
+/* Status label style [starts] */
+small.btn-success, small.btn-danger, small.btn-info, small.btn-secondary ,small.btn-warning, small.btn-primary {
+    border-radius: 100px;
+    padding: 0 4px 0 4px;
+}
+
+/* Status label style [ends] */
+
+
+
+/* For Tab based view pages [starts] */
+
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+    padding: 9px 15px;
+    display: inline-block;
+    border-radius: 10px 10px 0px 0px;
+    background: #ffd4c9;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4c4c4c;
+    transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background: #f5cdb2;
+	text-decoration:none;
+}
+
+.tab-links li.active a, .tab-links li.active a:hover {
+    background: #fff;
+    color: #369F91;
+    border: 1px solid #dce0e3;
+
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 10px 4px rgba(0,0,0,0.15);
+	background:#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+
+div.tab label {
+    display: block;
+}
+
+div.tab h4 {
+    padding: 20px 0;
+}
+
+div.tab span {
+    padding-left: 11px;
+}
+
+/* user profile cards [starts] */
+/* credit:- https://codepen.io/FrankieDoodie/pen/NOJpVX */
+
+.our-team {
+    padding: 30px 0 40px;
+    margin-block: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.our-team .email {
+    display: block;
+    font-size: 13px;
+    color: #4e5052;
+  }
+
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    bottom: 0;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+}
+
+div.row.no-assignee {
+    padding: 20px 0;
+}
+
+div.row .no-assignee-text {
+    padding: 120px 0;
+    padding-left: 45px;
+}
+
+.our-team.project-manager
+{
+    background-color: #f0d558 !important;
+}
+
+
+/* user profile cards [ends] */
+
+/* For Tab based view pages [ends] */
+
+/* Date Range Filter Css [starts] */
+.date-range-text {
+    font-size: 14px;
+}
+
+.date-range-text-6 {
+    font-size: 13px;
+}
+
+/* Date Range Filter Css [ends] */
+
+/* Timesheet Calendar Page [starts] */
+
+.vuecal__cell--disabled {
+    text-decoration: line-through;
+}
+.vuecal__cell--before-min {
+    color: #b6d6c7;
+}
+.vuecal__cell--after-max {
+    color: #008b8b;
+}
+
+div.date-title {
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0;
+}
+
+div.date-title:before,
+div.date-title:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+div.date-title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+div.date-title:after {
+    right: -0.5em;
+    margin-right: -50%;
+}
+
+td.no-data {
+    text-align: center;
+    color: #999595;
+}
+
+/* temporary fix for the table container to show more list in the select drop-down */
+div.timesheet-list table {
+    margin-bottom: 3rem;
+}
+/* Timesheet Calendar Page [ends] */
+
+/* Style fix for the Laravel Notify v2.0 [starts] */
+.fixed.inset-0.flex.items-end.justify-center.px-4.py-6.pointer-events-none.sm\:p-6.sm\:items-start.sm\:justify-end {
+    z-index: 10000;
+}
+/* Style fix for the Laravel Notify v2.0 [ends] */
+
+/* Fix for the position of the table-chart button in the Reports [starts] */
+.nav-link.report-table-chart-buttons {
+    padding: 5px 1rem;
+}
+/* Fix for the position of the table-chart button in the Reports [ends] */
+
+/* Arrange multiple interactive buttons above the datatable like in Document Uploads List Page [starts] */
+.addplus-btn.float-left {
+    margin-right: 10px;
+}
+.addplus-btn.float-right {
+    margin-left: 10px;
+}
+/* Arrange multiple interactive buttons above the datatable like in Document Uploads List Page [ends] */
+
+/* To fix the label error border regarding the form fields with icons [starts] */
+.modal-body .input-group,
+.card .input-group{
+    flex-wrap: nowrap;
+}
+/* To fix the label error border regarding the form fields with icons [ends] */
+
+/* Showing Profile image in the profile edit page [starts] */
+.profile-form-img {
+    height: 35px !important;
+    width: 35px;
+    /* object-fit: cover; */
+    object-fit: contain;
+}
+
+.profile-upload {
+    position: absolute;
+    left: 45px;
+    top: 27px;
+}
+
+.profile-image-upload {
+    position: relative;
+    /* border: 1px red solid; */
+    height: 100px;
+    /* overflow: auto; */
+}
+
+.profile-upload {
+    width: auto;
+}
+
+/* Showing Profile image in the profile edit page [ends] */
+
+/* To show shadow to the table in list page [starts] */
+.card-body .table-list {
+    padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 10px 4px rgba(0,0,0,0.15);
+	background:#fff;
+    margin-bottom: 54px;
+}
+/* To show shadow to the table in list page [ends] */
+
+p.question-info {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #2e3192;
+}
+
+/* To show the selected in table row selection [starts] */
+table tr.selected {
+    background: antiquewhite;
+}
+/* To show the selected in table row selection [ends] */
+
+.school-user-details .form-group span{
+    padding-left: 11px;
+    color: #000;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 4px;
+    display: block;
+}
+
+.mis-hr-line {
+    margin-top: 7px;
+    margin-bottom: 22px;
+    border: 0;
+    border-top: 2px dotted #cca6a6;
+}
+
+div.section-title {
+    display: flex;
+    justify-content: start;
+    font-weight: bold;
+}
+
+a.href-link {
+    text-decoration: underline !important;
+}
+
+
+/* Dashboard style [starts]*/
+
+.dashboard-error-chart {
+    margin-left: 16px;
+    /* padding: 14px; */
+}
+
+.dashboard-error-heading {
+    font-size: 14px;
+    color: red;
+}
+
+/* Dashboard style [ends]*/
+
+/* User page style [starts] */
+:root {
+  --bs-white: #fff;
+  --bs-dark: #212529;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-500:#adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+}
+
+.user-management {
+  background-color: var(--bs-gray-300);
+  padding: 1.5rem;
+  margin-top: 10px;
+}
+.user-management form .form-label {
+  font-weight: 700;
+}
+.user-management form .form-control {
+  border-radius: 0;
+}
+.user-management form .form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-gray-500);
+}
+.user-management .user-card {
+  background-color: var(--bs-white);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.user-management .user-card_name {
+  font-weight: 700;
+  color: var(--bs-dark);
+}
+.user-management .user-card_department {
+  color: var(--bs-gray-700);
+  margin-bottom: 0;
+}
+.user-management .user-card_designation {
+  color: var(--bs-gray-600);
+}
+.no-result {
+    color: red;
+    margin-left: 1rem;
+}
+.user-management .user-card .edit-btn-group {
+    text-align: right; 
+}
+/* User page style [ends] */
