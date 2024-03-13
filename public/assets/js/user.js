@@ -1,11 +1,9 @@
 $(function() {
     getUsers();
+});
 
-    $('#inputSearch').on('keyup change', function() {
-        let searchTerm = $(this).val().trim();
-        getUsers();
-    });
-    
+$('#inputSearch').on('keyup change', function() {
+    getUsers();
 });
 
 function getUsers(pageNumber) {
@@ -55,7 +53,8 @@ function getUsers(pageNumber) {
                 if (response.users.total > 8) { 
                     $('.pagination').html(''); 
                     for (let i = 1; i <= Math.ceil(response.users.total / 8); i++) {
-                        $('.pagination').append('<button onclick="getUsers(' + i + ')">' + i + '</button>');
+                        let activeClass = pageNumber == i ? 'active' : '';
+                        $('.pagination').append('<button class="btn btn-primary ' + activeClass + '" onclick="getUsers(' + i + ')">' + i + '</button>');
                     }
                 } 
             }

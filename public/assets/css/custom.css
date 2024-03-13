@@ -460,4 +460,8 @@ a.href-link {
 .user-management .user-card .edit-btn-group {
     text-align: right; 
 }
+.user-management .pagination {
+    display: flex;
+    justify-content: center;
+}
 /* User page style [ends] */

@@ -85,14 +85,14 @@
                                                    class="form-control form-control-user" id="password"
                                                    placeholder="Password">
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" value="1"
                                                        name="remember_me" id="remember_me">
                                                 <label class="custom-control-label" for="remember_me">Remember
                                                     Me</label>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <button type="submit" class="btn btn-primary btn-user btn-block" onClick=""
                                                 value='Login'>
